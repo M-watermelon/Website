@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSP notes - My blog</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/png" href="images/duckie_i.png">
+
+</head>
+
+
+<body>
+    <div class="right">
+        <aside class="smallbar">
+          <section>
+          <div class="subtitle">Navigation</div>
+          <ul class="pixelbullets">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="archive.html">Slideshow Archive</a></li> 
+           </ul>
+          </section>
+    
+      
+        </aside>
+      </div>
+    <article style="padding-left: 10px;" class ="post" >
+        <div class = "subtitle">Expanded AP CS Principles notes <img src="gifs/new_heart.gif" ></div>
+        <h2 id="unit-1-">Unit 1:</h2>
+<p>Input → ASCII → Binary</p>
+<ul>
+<li>Bit: 1 or 0, a value that is used to store information, can be one of two options (short for binary digit)<ul>
+<li>Smallest way of storing information on a computer</li>
+</ul>
+</li>
+<li><p>Byte: 8 bits (up to 256)</p>
+</li>
+<li><p>Overflow error: when a program encounters a number that is larger than the storage capacity</p>
+</li>
+<li>Hexadecimal:   &amp;x <em> 16^1&amp; + &amp;x </em> 16^0&amp;</li>
+</ul>
+
+        <h2 id="unit-2-">Unit 2:</h2>
+        <p>Computer network - type of computing system</p>
+        <ul>
+        <li>Packet switching → file split into packets [sent in any order], is reassembled by reciever [done by router] (its small amount of data)</li>
+        <li>Bandwidth → max amount of data that can be sent on network during a fixed amount of time  (bits per second)</li>
+        </ul>
+        <p>DNS Spoofing - Assign different IP addresses for a service that redirects user to a malicious website</p>
+        <h3 id="computer-protocol-models-">Computer protocol models:</h3>
+        <ul>
+        <li><p>OSI → Open systems interconnect: 7 groups of protocols
+        7.  Application    [HTTP, DNS]
+        6.  Presentation   [TCP, UDP]
+        5.  Session<br>4.  Transport
+        3.  Network
+        2.  Data link 
+        1.  Physical</p>
+        </li>
+        <li><p>TCP → Transmission Control Protocol</p>
+        <ul>
+        <li><strong>Error checking and recovery</strong></li>
+        <li>Slow</li>
+        <li>Accurate </li>
+        <li>Three way handshake</li>
+        <li>Email, web browsing</li>
+        <li>Unicast</li>
+        </ul>
+        </li>
+        <li><p>UDP → User Datagram Protocol</p>
+        <ul>
+        <li>Fast</li>
+        <li>Inaccurate, does <strong>not</strong> guarantee transfers</li>
+        <li>Music streaming, VolP (Voice over Internet Protocol)</li>
+        <li>Unicast, multicast, broadcast</li>
+        <li><strong>Error checking only</strong>  <mark>discards erroneous packets</mark><h3 id="tcp-ip-model">TCP/ IP model</h3>
+        </li>
+        </ul>
+        </li>
+        <li><p>Application    [HTTP, DNS]</p>
+        <ul>
+        <li>URL → Uniform Resource Location</li>
+        <li>Web server: provides web pages to clients</li>
+        <li>http: HyperText Transfer Protocol,   ask and recieve data from web server  <strong>Uses TCP Port 80</strong> </li>
+        <li>https: secure version of http <strong>Uses TCP Port 443</strong></li>
+        <li>DNS: Domain Name Service, Connects URL to an IP address</li>
+        </ul>
+        </li>
+        <li>Transport   [TCP, UDP]<ul>
+        <li>Port numbers assigned to devices</li>
+        </ul>
+        </li>
+        <li><p>Internet [IP] (OSI level 3)</p>
+        <ul>
+        <li>IPV4, 32 bits, 4 octets, 8 bits long</li>
+        <li>Unicast: Specific device, internet-wide access [TCP]</li>
+        <li>Multicast: Group of devices, range of IPs, Internet-wide access [UDP]</li>
+        <li>Broadcast: <em>All</em> devices in LAN, data stops at router [UDP]</li>
+        </ul>
+        </li>
+        <li><p>Network Access layer [Data link, Fiber, MAC, Ethernet, NIC, Wires]</p>
+        <ul>
+        <li>Physical layer, delivers packets from one NIC (Network Interface Card) to another (hop)</li>
+        <li>Each NIC has a unique MAC (Media Access Control) Address [Used for local hops]</li>
+        <li>Packet uses <strong>metadata</strong> for routing info</li>
+        </ul>
+        </li>
+        <li><p>LAN → Local Area Network </p>
+        </li>
+        <li>AS → Autonomous systems </li>
+        <li>Intranet → LANS connected by routers</li>
+        <li>IETF → Internet Engineering Task Force → develops standards, technical discussions regarding internet</li>
+        <li>DHCP → Dynamic Host Configuration Protocol (Assigns IP addresses)</li>
+        </ul>
+        
+
+    </article>
+</body>
+
+<footer style ="padding-bottom: 30px;">
+    <img src="images/catpuccin.svg">
+    <div><span style="color: #93e6d3">m</span><span style="color: #99e2d6">a</span><span style="color: #a0ddd9">d</span><span style="color: #a6d9db">e</span><span style="color: #add5de"> </span><span style="color: #b3d0e1">b</span><span style="color: #bacce4">y</span><span style="color: #c0c8e6"> </span><span style="color: #c7c4e9">m</span><span style="color: #cdbfec">e</span><span style="color: #d3bbef"> </span><span style="color: #dab7f1">❤</span><span style="color: #e0b2f4"> </span><span style="color: #e7aef7">m</span><span style="color: #edaafa">o</span><span style="color: #f4a5fc">s</span><span style="color: #faa1ff">t</span><span style="color: #f4a4fe"> </span><span style="color: #eea7fc">i</span><span style="color: #e8aafb">m</span><span style="color: #e2adf9">a</span><span style="color: #dcb0f8">g</span><span style="color: #d6b3f6">e</span><span style="color: #d0b6f5">s</span><span style="color: #cab9f3"> </span><span style="color: #c3bcf2">a</span><span style="color: #bdbff0">r</span><span style="color: #b7c2ef">e</span><span style="color: #b1c5ed"> </span><span style="color: #abc8ec">s</span><span style="color: #a5cbea">o</span><span style="color: #9fcee9">u</span><span style="color: #99d1e7">r</span><span style="color: #93d4e6">c</span><span style="color: #9ad1e2">e</span><span style="color: #a1cedd">d</span><span style="color: #a7cbd9"> </span><span style="color: #aec8d5">o</span><span style="color: #b5c5d0">n</span><span style="color: #bcc2cc">l</span><span style="color: #c2bfc8">i</span><span style="color: #c9bdc4">n</span><span style="color: #d0babf">e</span><span style="color: #d7b7bb"> </span><span style="color: #ddb4b7">❤</span><span style="color: #e4b1b2"> </span><span style="color: #ebaeae">2</span><span style="color: #f2abaa">0</span><span style="color: #f8a8a5">2</span><span style="color: #ffa5a1">4</span></div>
+      
+  </footer>
+
+
+</html>
