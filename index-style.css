@@ -1,0 +1,296 @@
+:root {
+    --bg-color:#191a21;
+    --border-color: #f6cfca;
+    --subtitle-color:#ffe8e5;
+    --link-color:#ebc2ce;
+    --roseWhite: #ffe8e5;
+    --rose1: #f6cfca;	
+    --rose2:#eabfb9;
+    --rose-dark:#b86b77;
+    --rose3: #e5a298;
+    --shadow: rgb(3, 3, 3);
+    --purple: #d0b6e3;
+       
+      
+      
+      
+  }
+  
+  @font-face {
+    font-family: 'CoffeCake'; /*a name to be used later*/
+    src: url('fonts/coffecake/CoffeCake.ttf'); /*URL to font*/
+  }
+  
+  html {
+    padding:0;
+    color: var(--roseWhite);
+    background-attachment:fixed;
+    background-color: #191a21;
+    /*max-width: 700px;*/
+    margin: auto;
+  }
+  body{
+    background: linear-gradient(60deg, rgba(238,174,202,1) 0%,rgb(233, 99, 157) 30%, rgb(219, 164, 101) 60%, rgba(148,187,233,1) 100%); 
+  }
+  body a {
+    color:var(--link-color);
+
+  
+  }
+  header {
+    /*background-clip: text ;*/
+    /*background-image:url('images/road.jpg');
+    background-image:url('backgrounds/bgif095.gif');
+    
+    box-shadow: 20px 20px 5px rgb(3, 3, 3);
+    transition:0.3s;
+    
+    
+    */
+  
+    
+  
+    display:flex;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;*/
+  
+  }
+  
+  header > p{
+    /*padding-top: 75px;*/
+    padding-left: 250px;
+    margin-top: 30px;
+    font-size:150px ; 
+    display: flex;
+    font-family:CoffeCake ; 
+    color: transparent;
+    transition: 0.5s;
+    -webkit-text-stroke: 4px var(--shadow);
+    text-shadow: 0px 0px 0px #d0b6e3 , 5px 5px 0px  #ffffff, 10px 10px 0px  #d0b6e3,  15px 15px 0px var(--shadow), 25px 25px 10px var(--shadow);
+    /*color: var(--bg-color);
+    
+     /*#e0215a
+     text-shadow: 0px 0px 0px #b86b95, 15px 15px 0px var(--shadow);*/ 
+     animation-name: float;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+  
+  
+  .flex {
+    display:flex;
+    justify-content: center;
+  }
+  .sidebar {
+    background-color: #191a21 ;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--bg-color);
+    max-width:250px;
+    width:200px;
+    height:fit-content;
+    border:1px solid var(--border-color);
+    display: block;
+    position:relative;
+    /*margin-top: 20px;*/
+    z-index:1;
+    box-shadow: 10px 10px 5px rgb(3, 3, 3);
+  }
+  
+  .smallbar {
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--bg-color);
+    max-width:250px;
+    width:200px;
+    height:120px;
+    border:1px solid var(--border-color);
+    position:fixed;
+    margin-top: 300px;
+    right:270px;
+    box-shadow: 10px 10px 5px rgb(3, 3, 3);
+  
+  
+  }
+  
+  .nowPlaying {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--bg-color);
+    width:fit-content;
+    height:min-content;
+    border:1px solid var(--border-color);
+    position:fixed;
+    right:270px;
+    top: 40px;
+    box-shadow: 10px 10px 5px rgb(3, 3, 3);
+  
+  
+  }
+  article {
+    background-color:var(--bg-color);
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px solid var(--border-color);
+    max-width:600px;
+    margin-top:20px;
+    margin-left:10px;
+    margin-right:10px;
+    box-shadow: 10px 10px 5px rgb(3, 3, 3);
+  
+    transition: 0.3s;
+    
+  }
+  .subtitle {
+    background-image:url('images/magenta_pink.png');
+    background-clip: text ;
+    /*color:var(--subtitle-color);*/
+    font-size:20px;
+    font-weight:bold;
+    font-family:CoffeCake ;
+    border-bottom:2px solid var(--subtitle-color);
+    margin-left:10px;
+    margin-right:10px;
+    text-align:right;
+    padding-top:20px;
+  }
+  h1, h2, h3, a{
+    font-family:CoffeCake ;
+    background-image:url('images/magenta_pink.png');
+    background-clip: text ;
+  }
+  article > p, h4, a {
+      padding:10px;
+      padding-left:20px;
+  }
+  article:hover{
+    transform:scale(1.05);
+  
+  }
+  
+  
+  .links {
+    list-style-type:'+';
+    font-size:16px;
+    
+  }
+  .links li a {
+    color:var(--link-color);
+    letter-spacing:1px;
+    text-decoration:none;
+  }
+  main {
+    /*margin-top:-21px;*/
+    left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  main > a{
+    font-size: medium;
+  }
+     section > p {
+       padding:10px;
+     }
+  footer {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:12px;
+    align-self: self-end;
+    background-color:var(--bg-color);
+    padding: 20px;
+  }
+  
+   @media only screen and (max-width: 630px) {
+     .sidebar {
+       position:relative;
+       max-width:100%;
+       width:100%;
+       height:150px;
+       display:flex;
+       flex-direction:row;
+       flex-wrap:wrap;
+       overflow:hidden;
+     }
+     .rightbar {
+      position:relative;
+      max-width:100%;
+      width:0%;
+      height:150px;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      overflow:hidden;
+    }
+     .flex {
+       flex-wrap:wrap;
+       flex-direction:row;
+     }
+     .right {
+       order:1;
+  
+     }
+     .left {
+       order:2;
+       left: 20px;
+     }
+     section {
+      
+       display:flex;
+       flex-wrap:wrap;
+       width:120px;
+     }
+  }
+  
+  ul.pixelbullets {
+      list-style-image: url("gifs/star51.gif");
+      /*padding-left: 25px;
+      list-style-image: url("gifs/flowerbutton.gif");*/
+      
+    }
+    
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .duckie{
+    transition:0.3s;
+  }
+  .duckie:hover{
+    transform: scale(0.7);
+  
+  }
+  header> p:hover{
+    transform: translateY(10px);
+    
+  
+  }
+  
+  
+  @keyframes float {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translateY(15px); }
+    100%   { transform: translateY(-0px); }    
+  }
+  
+  
+  a:hover{
+    color: #e0215a;
+    
+  }
+  
+  
+  .divider{
+    display: flex;
+    height: 45px;
+    background-image:url('dividers/3.png' );
+    background-repeat: repeat-x;
+    background-size:600px;
+    margin-bottom: 2cm;
+  
+  }
+  
+  
