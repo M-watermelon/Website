@@ -41,10 +41,9 @@ header {
 .header-text{
   color:var(--roseWhite);
   margin-top: 30px;
-  font-size:150px ; 
+  font-size: 10vw ; 
 
   transition: 0.5s;
-  height:fit-content;
    animation-name: float;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -53,7 +52,7 @@ header {
 
 header > p{
   color:var(--bg-color);
-
+  font-size: 2vw ; 
   margin-top: 60px;
 }
 
