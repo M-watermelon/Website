@@ -24,14 +24,20 @@
   html {
     padding:0;
     color: var(--roseWhite);
-    background-attachment:fixed;
-    background-color: #191a21;
-    /*max-width: 700px;*/
-    margin: auto;
+    
+    /*background: linear-gradient(60deg, rgb(252, 173, 248) 0%,rgb(212, 11, 98) 30%,rgb(233, 99, 157) 40%,rgb(199, 113, 78) 50%, rgb(219, 164, 101) 60%, rgba(148,187,233,1) 100%); 
+    */
+    background-color: #9198e5;
+    
+    background-size:contain;                      /* <------ */
+    background-repeat:no-repeat;
+    height: 100vh;
+    background-position: right;
+    /*background-color: #191a21;
+    max-width: 700px;*/
+    
   }
-  body{
-    background: linear-gradient(60deg, rgba(238,174,202,1) 0%,rgb(233, 99, 157) 30%, rgb(219, 164, 101) 60%, rgba(148,187,233,1) 100%); 
-  }
+
   body a {
     color:var(--link-color);
 
@@ -47,7 +53,6 @@
     
     
     */
-  
     
   
     display:flex;
@@ -64,11 +69,11 @@
     margin-top: 30px;
     font-size:150px ; 
     display: flex;
-    font-family:CoffeCake ; 
-    color: transparent;
+    font-family:'Courier New', Courier, monospace; 
+  
     transition: 0.5s;
-    -webkit-text-stroke: 4px var(--shadow);
-    text-shadow: 0px 0px 0px #d0b6e3 , 5px 5px 0px  #ffffff, 10px 10px 0px  #d0b6e3,  15px 15px 0px var(--shadow), 25px 25px 10px var(--shadow);
+    color: transparent;
+    text-shadow:25px 25px 10px var(--shadow);
     /*color: var(--bg-color);
     
      /*#e0215a
@@ -130,7 +135,8 @@
   
   }
   article {
-    background-color:var(--bg-color);
+    background-color: #191a21;
+
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border:1px solid var(--border-color);
@@ -196,7 +202,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:12px;
     align-self: self-end;
-    background-color:var(--bg-color);
+    background-color:transparent;
     padding: 20px;
   }
   
