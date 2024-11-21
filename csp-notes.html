@@ -11,20 +11,16 @@
 
 
 <body>
-    <div class="right">
-        <aside class="smallbar">
-          <section>
-          <div class="subtitle">Navigation</div>
-          <ul class="pixelbullets">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="archive.html">Slideshow Archive</a></li> 
-           </ul>
-          </section>
-    
-      
-        </aside>
-      </div>
-    <article style="padding-left: 10px;" class ="post" >
+  <header style="height: 100px;">
+    <nav id="navbar">
+      <button type="button" style = "bottom: 10px;" onclick="window.location='index.html'">Home</button>
+      <button type="button" style = "bottom: 10px;" onclick="window.location='landing.html'">Landing Page</button>
+      <button type="button" style = "margin-bottom: 10px;" onclick="window.location='about.html'">About</button>
+      <button type="button" style = "margin-bottom: 10px;" onclick="window.location='archive.html'">Archive</button>
+  
+    </nav>
+  </header>
+    <article style="padding-left: 10px;" class ="center" >
         <div class = "subtitle">Expanded AP CS Principles notes <img src="gifs/new_heart.gif" ></div>
         <h2 id="unit-1-">Unit 1:</h2>
 <p>Input → ASCII → Binary</p>
@@ -47,12 +43,13 @@
         <li>Bandwidth → max amount of data that can be sent on network during a fixed amount of time  (bits per second)</li>
         </ul>
         <p>DNS Spoofing - Assign different IP addresses for a service that redirects user to a malicious website</p>
-        <h3 id="computer-protocol-models-">Computer protocol models:</h3>
+        <h3>Computer protocol models:</h3>
         <ul>
         <li><p>OSI → Open systems interconnect: 7 groups of protocols
         7.  Application    [HTTP, DNS]
         6.  Presentation   [TCP, UDP]
-        5.  Session<br>4.  Transport
+        5.  Session<br>
+        4.  Transport
         3.  Network
         2.  Data link 
         1.  Physical</p>
@@ -73,10 +70,11 @@
         <li>Inaccurate, does <strong>not</strong> guarantee transfers</li>
         <li>Music streaming, VolP (Voice over Internet Protocol)</li>
         <li>Unicast, multicast, broadcast</li>
-        <li><strong>Error checking only</strong>  <mark>discards erroneous packets</mark><h3 id="tcp-ip-model">TCP/ IP model</h3>
-        </li>
+        <li><strong>Error checking only</strong>  <mark>discards erroneous packets</mark></li>
         </ul>
         </li>
+        
+        <h3>TCP/ IP model</h3>
         <li><p>Application    [HTTP, DNS]</p>
         <ul>
         <li>URL → Uniform Resource Location</li>
@@ -86,7 +84,9 @@
         <li>DNS: Domain Name Service, Connects URL to an IP address</li>
         </ul>
         </li>
-        <li>Transport   [TCP, UDP]<ul>
+
+        <li><p>Transport   [TCP, UDP]</p>
+        <ul>
         <li>Port numbers assigned to devices</li>
         </ul>
         </li>

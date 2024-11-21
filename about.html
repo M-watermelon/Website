@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About My Blog</title>
+<title>About</title>
 <link rel="shortcut icon" type="image/png" href="images/duckie_i.png">
 <link href="style.css" rel="stylesheet" type="text/css" media="all">
-
-
+<script src="script.js"></script>
 </head>
 
 <body>
+<header style="height: 100px;">
+  <nav id="navbar">
+    <button type="button" style = "bottom: 10px;" onclick="window.location='index.html'">Home</button>
+    <button type="button" style = "bottom: 10px;" onclick="window.location='landing.html'">Landing Page</button>
+    <button type="button" style = "margin-bottom: 10px;" onclick="window.location='about.html'">About</button>
+    <button type="button" style = "margin-bottom: 10px;" onclick="window.location='archive.html'">Archive</button>
 
-
+  </nav>
+</header>
 
 <aside class="flex" >
 <div >
+  
 
 
 <main style = "max-width: 900px;">
@@ -27,7 +34,7 @@
 
 <h2>Side projects</h2>
 <ul>
-  <li>Writing posts -> creating a biology section for this site</li>
+  <li>Writing posts &rArr; creating a biology section for this site</li>
   <li>Occasional programming and CTF competitions </li>
   <li>Comp sci club</li>
   <li>irl commitments <img src="images/bear3.png"></li>
@@ -43,39 +50,12 @@
   <li>Learning more about computer hardware and hardware pentesting</li>
 </ul>
  
-<h2>Past competitions:</h2>
-<ul>
-<li>PicoCTF 2021</li>
-<li>PicoCTF 2022</li>
-<li>Cyberstart 2021-2022</li>
-<li>Ranges.io invite-only Magnetic Rock beta test CTF 2022</li>
-<li>Advent of Code 2022</li>
-<li>Cyberstart 2022-2023 </li>
-<li>PicoCTF 2023</li>
-<li>Advent of Code 2023</li>
-<li>Hack for the World - Naperville North High School Hackathon 2023</li>
-<li>Girls Who Code + UIUC Local Hackathon 2023</li>
-<li>USCC Cyber Camp CTF Summer 2023</li>
-<li>Cyberstart 2023-2024</li>
-<li>ACSL 2024</li>
-<li>Hack for the World - Naperville North High School Hackathon 2024</li>
-<li>PicoCTF 2024</li>
-</ul>
 
 
-<h2>Achievements:</h2>
-<ul>
-  <li>4th place for US Middle Schools in PicoCTF 2021</li>
-  <li>National Cyber Scholarship Finalist for Cyberstart America 2021-2022 (Under Illinois Finalists at: <a href="https://www.nationalcyberscholarship.org/winners-2022">https://www.nationalcyberscholarship.org/winners-2022</a> )</li>
-  <li>118th place in PicoCTF 2023 nationally</li>
-  <li>National Cyber Scholar for Cyberstart America 2022-2023 (Under Illinois Finalists at: <a href="https://www.nationalcyberscholarship.org/winners-2023">https://www.nationalcyberscholarship.org/winners-2023</a> )</li>
-  <li>Beginner Tier Winner of Girls Who Code + UIUC Hackathon 2023</li>
-  <li>Completing the SANS Foundations course paid for by the NCSF scholarship</li>
-  <li>GFACT certified, passing the exam with a score of 94% (<a href="https://www.giac.org/certified-professional/Maria-Matevosyan/224451">https://www.giac.org/certified-professional/Maria-Matevosyan/224451</a>)</li>
-  </ul>
 
-<a style = "font-size: x-large;" class="center" href = "https://github.com/M-watermelon">
-  <div><span style="color: #df39a7">→</span><span style="color: #e341ac"> </span><span style="color: #e648b1">C</span><span style="color: #ea50b6">h</span><span style="color: #ed57ba">e</span><span style="color: #f15fbf">c</span><span style="color: #f466c4">k</span><span style="color: #f86ec9"> </span><span style="color: #f771c8">o</span><span style="color: #f774c6">u</span><span style="color: #f676c5">t</span><span style="color: #f579c4"> </span><span style="color: #f47cc2">m</span><span style="color: #f47fc1">y</span><span style="color: #f381bf"> </span><span style="color: #f284be">g</span><span style="color: #f289c4">i</span><span style="color: #f28dc9">t</span><span style="color: #f292cf">h</span><span style="color: #f297d4">u</span><span style="color: #f29cda">b</span><span style="color: #f2a0df"> </span><span style="color: #f2a5e5">←</span></div></a>
+<button type="button" class="center" style="margin-bottom: 10px;" onclick="window.location='https://github.com/M-watermelon'">
+  <div><span style="color: #df39a7">→</span><span style="color: #e341ac"> </span><span style="color: #e648b1">C</span><span style="color: #ea50b6">h</span><span style="color: #ed57ba">e</span><span style="color: #f15fbf">c</span><span style="color: #f466c4">k</span><span style="color: #f86ec9"> </span><span style="color: #f771c8">o</span><span style="color: #f774c6">u</span><span style="color: #f676c5">t</span><span style="color: #f579c4"> </span><span style="color: #f47cc2">m</span><span style="color: #f47fc1">y</span><span style="color: #f381bf"> </span><span style="color: #f284be">g</span><span style="color: #f289c4">i</span><span style="color: #f28dc9">t</span><span style="color: #f292cf">h</span><span style="color: #f297d4">u</span><span style="color: #f29cda">b</span><span style="color: #f2a0df"> </span><span style="color: #f2a5e5">←</span></div>
+</button>
 </main>
 </div>
 </aside>
@@ -90,37 +70,22 @@
     <img src="images/cat.png">
 
  
-    </section>
+    
 
 
-
-    <div class="subtitle">Navigation</div>
-    <nav >
-      <button type="button" class = "center" style = "margin-top:10px; margin-bottom: 10px;" onclick="window.location='index.html'">Home</button>
-      <button type="button" class = "center" style = "margin-bottom: 10px;" onclick="window.location='archive.html'">Slideshow Archive</button>
-
-    </nav>
-
-    </section>
-
-
-
-
- 
-    <section>
       <div class = "subtitle">About me:</div>
       <p>Hi there!!</p>
       <button type="button" class = "center" style = "margin-bottom: 10px;" onclick="window.location='https://www.linkedin.com/in/maria-matevosyan-5292a3245/'">My Linkedin!</button>
 
       <div style="padding: 10px;">
       
-      <h2 >My hobbies: (filler text)</h2>
+      <h2 >My hobbies:</h2>
       <ul>
-        <li>Making websites with HTML/CSS/Javascript</li>
+        <li>Making websites</li>
         <li>Learning about biology</li>
         <li>Playing videogames</li>
         <li>Drawing/Painting</li>
-        <li>Speed skating</li>
+        <li>Skating</li>
         <li>Listening to music</li>
         <li>Reading books</li>
         <li>Biking</li>
@@ -129,8 +94,8 @@
         </ul>
         
      </div>
-    </section>
 
+    </section>
 
   </aside>
 
