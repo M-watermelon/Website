@@ -30,10 +30,9 @@ body a {
 
 }
 header {
-  /*font-family:CoffeCake ;*/
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace ;
   font-weight: 500;
-  height:40vh;
+  height:30vh;
   display: flex;
   justify-content: center;
   background:linear-gradient(60deg,rgb(233, 99, 157) 0%, rgba(148,187,233,1) 100%);
