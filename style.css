@@ -30,8 +30,10 @@ body a {
 
 }
 header {
-  font-family:CoffeCake ;
-  height:30vh;
+  /*font-family:CoffeCake ;*/
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  height:40vh;
   display: flex;
   justify-content: center;
   background:linear-gradient(60deg,rgb(233, 99, 157) 0%, rgba(148,187,233,1) 100%);
@@ -79,47 +81,54 @@ header > p{
 .nowPlaying {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color:var(--bg-color);
-  width:fit-content;
-  height:min-content;
-  border:1px solid var(--border-color);
+  width:auto;
+  max-width:400px;
+  height:auto;
+  border-left:1px solid var(--border-color);
   position:absolute;
   right:2%;
   top: 150px;
-  box-shadow: 10px 10px 5px rgb(3, 3, 3);
-
-
+  /*box-shadow: 10px 10px 5px rgb(3, 3, 3);*/
+  padding-left: 10px;
 }
+
+
+
 article {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /*border:1px solid var(--border-color);*/
-  border: 3px solid;
+  border: 1px solid;
   border-image-source:linear-gradient(to right,rgb(233, 99, 157) 0%, rgba(148,187,233,1) 100%); 
   border-image-slice: 1;
+  box-shadow: 10px 10px 5px rgb(3, 3, 3);
   max-width:800px;
   margin:20px;
-  box-shadow: 10px 10px 5px rgb(3, 3, 3);
+  
   transition: 0.3s;
 }
 
 .subtitle {
 
-  /*color:var(--subtitle-color);*/
+  /*color:var(--subtitle-color);
+    font-family:CoffeCake ;
+*/  
   font-size:20px;
-  font-weight:bold;
-  font-family:CoffeCake ;
+  font-weight: 600;
   border-image-source:linear-gradient(to right, rgba(238,174,202,1) 0%,rgb(233, 99, 157) 30%, rgba(148,187,233,1) 100%); 
   border-image-slice: 1;
-  border-bottom:3px solid /*var(--subtitle-color)*/;
+  border-bottom:1px solid /*var(--subtitle-color)*/;
   margin-left:10px;
   margin-right:10px;
   text-align:right;
   padding-top:20px;
 }
+/*
 h1, h2, h3{
   font-family:CoffeCake ;
 
 }
-article > p, h4, a {
+*/
+article > p, h1, h2, h3, h4, a , em{
     padding:10px;
     padding-left:20px;
 }
@@ -137,9 +146,6 @@ main {
 }
 main > a{
   font-size: medium;
-}
-section > p {
-  padding:10px;
 }
 
 footer {
@@ -167,6 +173,7 @@ ul.pixelbullets {
 
 .duckie{
   transition:0.3s;
+  padding: 0px;
 }
 .duckie:hover{
   transform: scale(0.7);
@@ -197,21 +204,21 @@ a:hover{
 }
 
 button{
-  font-family:CoffeCake ;
+  /*font-family:CoffeCake ;*/
   cursor: pointer;
   border-radius: 5px;
-  font-size: 20px;
-  font-weight:lighter;
+  font-size: 18px;
+  font-weight:bolder;
   padding: 10px 14px;
   width:150px;
   border: none;
-  background-color: transparent;
+  background-color: #323238;
   color: var(--roseWhite);
 
 }
 
 button:hover{
-  background-color: #323238;
+  background-color: #202024;
 }
 nav > button{
   width:130px;
@@ -225,6 +232,7 @@ nav > button{
 
 nav > button:hover{
   transform: translateZ(0) rotate(-5deg) translate(5px, 0px);
+  background-color: #323238;
   
 
 }
@@ -240,4 +248,8 @@ hr{
 
 mark{
   background-color: #e0215a;
+}
+.icon{
+  filter: invert(1);
+  height:20px;
 }
