@@ -29,6 +29,14 @@ body a {
   color:var(--link-color);
 
 }
+nav{
+  width:100%;
+  top:0;
+  position: fixed;
+  transition: 0.3s;
+  background-color: var(--bg-color);
+  z-index: 7;
+}
 header {
   font-family:'Courier New', Courier, monospace ;
   font-weight: 500;
@@ -38,17 +46,7 @@ header {
   background:linear-gradient(60deg,rgb(233, 99, 157) 0%, rgba(148,187,233,1) 100%);
   margin-bottom: 40px;
   margin-top:20px;
-
 }
-nav{
-  width:100%;
-  top:0;
-  position: fixed;
-  transition: 0.3s;
-  background-color: var(--bg-color);
-  z-index: 7;
-}
-
 .header-text{
   position:absolute;
   color:var(--roseWhite);
@@ -216,7 +214,7 @@ button{
   padding: 10px 14px;
   width:150px;
   border: none;
-  background-color: #323238;
+  background-color: transparent;
   color: var(--roseWhite);
 
 }
